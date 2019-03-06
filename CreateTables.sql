@@ -12,8 +12,8 @@ CREATE TABLE Member(
 	Phone Char(20),
 	Handicap smallint,
 	JoinDate date,
-	Coach smallint,
-	Team Char(20),
+	Coach smallint Foreign Key References Member,
+	Team Char(20) Foreign Key References Team,
 	Gender Char(1))
 
 CREATE TABLE Tournament(
@@ -31,14 +31,3 @@ CREATE TABLE Team(
 	TeamName Char(20) Primary Key,
 	PracticeNight Char(20),
 	Manager smallint Foreign Key References Member)
-
-
-Alter TABLE Member 
-ADD CONSTRAINT FK_Coach FOREIGN KEY (Coach) References Member
-
-Alter TABLE Member 
-ADD CONSTRAINT FK_Team FOREIGN KEY (Team) References Team
-
-
-
-
