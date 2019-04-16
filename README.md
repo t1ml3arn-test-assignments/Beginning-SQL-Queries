@@ -8,7 +8,7 @@ Download the files as a zip using the green button, or clone the repository to y
 
 ## Releases
 
-This repo contains fixed and modified DDL and DML scripts to match SQLite syntax. Chapter-like `*.sql` scripts mostly created and tested in `sqliteman`. Some of them doesn't run in that application due to the new sql syntax which sqliteman does not support (window functions, chapter 9 script).
+This repo contains fixed and modified DDL and DML scripts to match SQLite syntax. Chapter-like `*.sql` scripts mostly created and tested in [sqliteman](https://sourceforge.net/projects/sqliteman/). Some of them doesn't run in that application due to the new sql syntax which sqliteman does not support (window functions, chapter 9 script).
 
 ## TODO
 
