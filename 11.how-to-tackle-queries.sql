@@ -95,7 +95,8 @@ where tourid is null;
 select * from member
 where memberid not in (select memberid from entry);
 -- OR with EXCEPT
-select memberid from member except
+select memberid from member 
+except
 select memberid from entry;
 
 -- ALL, EVERY
